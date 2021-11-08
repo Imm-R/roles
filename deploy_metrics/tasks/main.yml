@@ -26,5 +26,10 @@
 - name: Add docker-compose files
   copy: src={{ item }} dest={{ docker_folder }} owner=root group=root mode=0755
   loop:
-   - ""
+   - "docker"
+
+- name: Add nginx config
+  copy: src={{ item }} dest={{ nginx_folder }} owner=root group=root mode=0755
+  loop:
+   - "mon_server"
 

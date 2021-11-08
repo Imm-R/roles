@@ -1,6 +1,7 @@
 ---
 # defaults file for deploy_metrics
-docker_folder: /root/docker
+docker_folder: /root/
+nginx_folder: /etc/nginx/sites-enabled/
 packages:
 - apt-transport-https
 - ca-certificates
