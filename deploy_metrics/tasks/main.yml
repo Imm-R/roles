@@ -28,6 +28,12 @@
   loop:
    - "docker"
 
+- name: Remove file default file
+  ansible.builtin.file:
+    path: /etc/nginx/sites-enabled/default
+    state: absent
+
+
 - name: Add nginx config
   copy: src={{ item }} dest={{ nginx_folder }} owner=root group=root mode=0755
   loop:
