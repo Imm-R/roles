@@ -38,6 +38,6 @@
     project_src: /root/docker/
   register: output
 
-- name: Check NGINX configs
+- name: reload NGINX configs
   shell: "/usr/sbin/nginx -s reload" 
 
