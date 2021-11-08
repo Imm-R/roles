@@ -1,0 +1,14 @@
+---
+# defaults file for deploy_metrics
+docker_folder: /root/docker
+packages:
+- apt-transport-https
+- ca-certificates
+- curl
+- gnupg
+- lsb-release
+- nginx
+docker:
+- docker-ce
+- docker-compose
+
