@@ -1,5 +1,6 @@
 ---
 # defaults file for deploy_metrics
+mon_folder: /root/docker/
 docker_folder: /root/
 nginx_folder: /etc/nginx/sites-enabled/
 packages:

@@ -33,3 +33,11 @@
   loop:
    - "mon_server"
 
+- name: Create and start services
+  community.docker.docker_compose:
+    project_src: /root/docker/
+  register: output
+
+- name: Check NGINX configs
+  shell: "/usr/sbin/nginx -s reload" 
+
