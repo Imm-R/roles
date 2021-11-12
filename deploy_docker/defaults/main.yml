@@ -1,0 +1,11 @@
+---
+# defaults file for deploy_docker
+packages:
+- apt-transport-https
+- ca-certificates
+- curl
+- gnupg
+- lsb-release
+docker:
+- docker-ce
+- docker-compose
