@@ -6,9 +6,9 @@ services:
     image: grafana/grafana:7.5.3
     container_name: grafana
     restart: always
+    depends_on:
+      - prometheus
     volumes:
-            #      - ./grafana/grafana.ini:/etc/grafana/grafana.ini
-            #      - ./grafana/provisioning/:/etc/grafana/provisioning
       - ./grafana/dashboards/:/var/lib/grafana/dashboards
     ports:
       - 127.0.0.1:3000:3000
